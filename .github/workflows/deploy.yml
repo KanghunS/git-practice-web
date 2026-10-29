@@ -1,22 +1,27 @@
-name: Deploy
+name: Deploy (local)
 
-# deploy จะทำงานเมื่อมีอะไรเข้า release เท่านั้น (เลียนแบบ pipeline จริง)
 on:
   push:
     branches: [release]
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted          # <-- เปลี่ยนจาก ubuntu-latest เป็นเครื่องเรา
+    defaults:
+      run:
+        shell: cmd
     steps:
-      - name: เช็กเอาต์โค้ด
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: build Docker image
+      - name: build image ใหม่จากโค้ดล่าสุด
         run: docker build -t git-practice-web:latest .
 
-      - name: จำลองการ deploy
-        run: |
-          echo "🚀 กำลัง deploy..."
-          echo "ตรงจุดนี้คือที่ของจริงจะ: push image ขึ้น registry / ssh เข้า server / kubectl apply ฯลฯ"
-          echo "ตอนนี้แค่ build image ผ่าน = ถือว่า deploy สำเร็จในโหมดฝึก"
+      - name: หยุด+ลบ container เก่า (ถ้ามี)
+        continue-on-error: true
+        run: docker rm -f git-practice-web
+
+      - name: run container ใหม่ (เบื้องหลัง)
+        run: docker run -d --name git-practice-web -p 3000:3000 git-practice-web:latest
+
+      - name: เสร็จ
+        run: echo deploy done - open http://localhost:3000
