@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 // endpoint สำหรับเช็กว่า service รันอยู่ไหม (เอาไว้ให้ CI / deploy ตรวจสุขภาพ)
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'service is running v2 ', huh: "บลาๆโคตรการทำงาน" });
+  res.json({ status: 'ok', message: 'service is running v2 ', huh: "บลาๆโคตรการทำงาน", release: "Push to Release" });
 });
 
 // ฟังก์ชันง่าย ๆ ไว้ให้ test จับ
