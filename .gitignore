@@ -8,7 +8,6 @@ coverage/
 .credentials_rsaparams
 .runner
 .path
-.env
 _diag/
 _work/
 bin/
