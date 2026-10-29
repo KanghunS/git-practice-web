@@ -2,3 +2,18 @@ node_modules/
 npm-debug.log
 .env
 coverage/
+
+# GitHub Actions self-hosted runner (ห้าม commit โดยเฉพาะ .credentials)
+.credentials
+.credentials_rsaparams
+.runner
+.path
+.env
+_diag/
+_work/
+bin/
+externals/
+run-helper.*
+run.cmd
+config.cmd
+actions-runner-*.zip
