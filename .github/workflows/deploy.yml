@@ -1,0 +1,22 @@
+name: Deploy
+
+# deploy จะทำงานเมื่อมีอะไรเข้า release เท่านั้น (เลียนแบบ pipeline จริง)
+on:
+  push:
+    branches: [release]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: เช็กเอาต์โค้ด
+        uses: actions/checkout@v4
+
+      - name: build Docker image
+        run: docker build -t git-practice-web:latest .
+
+      - name: จำลองการ deploy
+        run: |
+          echo "🚀 กำลัง deploy..."
+          echo "ตรงจุดนี้คือที่ของจริงจะ: push image ขึ้น registry / ssh เข้า server / kubectl apply ฯลฯ"
+          echo "ตอนนี้แค่ build image ผ่าน = ถือว่า deploy สำเร็จในโหมดฝึก"

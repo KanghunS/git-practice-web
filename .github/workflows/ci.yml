@@ -1,0 +1,26 @@
+name: CI
+
+# รันทุกครั้งที่มี PR เข้า develop หรือ release และตอน push เข้า develop
+on:
+  pull_request:
+    branches: [develop, release]
+  push:
+    branches: [develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: เช็กเอาต์โค้ด
+        uses: actions/checkout@v4
+
+      - name: ติดตั้ง Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ติดตั้ง dependencies
+        run: npm install
+
+      - name: รัน test
+        run: npm test
