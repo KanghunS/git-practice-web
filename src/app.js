@@ -3,7 +3,7 @@ const app = express();
 
 // หน้าเว็บโง่ ๆ หนึ่งหน้า
 app.get('/', (req, res) => {
-  res.send('<h1>Hello Git Flow! 🚀</h1><p>version 1.0.0</p>');
+  res.send('<h1>Hello Git Flow V1! 🚀</h1><p>version 1.0.0</p>');
 });
 
 // endpoint สำหรับเช็กว่า service รันอยู่ไหม (เอาไว้ให้ CI / deploy ตรวจสุขภาพ)
