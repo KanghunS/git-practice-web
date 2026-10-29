@@ -33,7 +33,7 @@ git add .
 git commit -m "init: project scaffold"
 
 git branch -M main
-git remote add origin git@github.com:<ชื่อคุณ>/git-practice-web.git
+git remote add origin git@github.com:KanghunS/git-practice-web.git
 git push -u origin main
 
 # สร้าง branch สายงานตามที่คุยกัน
@@ -116,3 +116,4 @@ test ──PR──> develop ──PR──> release ──> (Deploy workflow �
 | `Dockerfile` | สร้าง image |
 | `.github/workflows/ci.yml` | รัน test เมื่อมี PR เข้า develop/release |
 | `.github/workflows/deploy.yml` | build image เมื่อ push เข้า release |
+"# git-practice-web" 
