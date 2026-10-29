@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "KanghunS/git-practice-web",
+  "pipelineDirectory": "git-practice-web",
+  "workspaceDirectory": "git-practice-web\\git-practice-web",
+  "repositories": {
+    "KanghunS/git-practice-web": {
+      "repositoryPath": "git-practice-web\\git-practice-web",
+      "lastRunOn": "10/29/2026 16:40:42 +07:00"
+    }
+  },
+  "lastRunOn": "10/29/2026 17:08:48 +07:00"
+}

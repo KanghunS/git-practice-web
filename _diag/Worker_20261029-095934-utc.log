@@ -1,0 +1,4114 @@
+[2026-10-29 09:59:34Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\kanghunz\Downloads\git-practice-web\.credentials'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'Runner': 'C:\Users\kanghunz\Downloads\git-practice-web\.runner'
+[2026-10-29 09:59:34Z INFO Worker] Version: 2.338.0
+[2026-10-29 09:59:34Z INFO Worker] Commit: 197ca027b90de199464dee3bb9ff198a1db60967
+[2026-10-29 09:59:34Z INFO Worker] Culture: en-US
+[2026-10-29 09:59:34Z INFO Worker] UI Culture: en-US
+[2026-10-29 09:59:34Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-10-29 09:59:34Z INFO ProcessChannel] Receiving message of length 25007, with hash 'edc47d47f562c27475bd12e883dd766079fc18ab1a09738eaae2d9662239914f'
+[2026-10-29 09:59:34Z INFO Worker] Message received.
+[2026-10-29 09:59:34Z INFO Worker] Job message:
+ {
+  "defaults": [
+    {
+      "type": 2,
+      "file": 1,
+      "line": 11,
+      "col": 7,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 11,
+            "col": 7,
+            "lit": "run"
+          },
+          "value": {
+            "type": 2,
+            "file": 1,
+            "line": 12,
+            "col": 9,
+            "map": [
+              {
+                "key": {
+                  "type": 0,
+                  "file": 1,
+                  "line": 12,
+                  "col": 9,
+                  "lit": "shell"
+                },
+                "value": {
+                  "type": 0,
+                  "file": 1,
+                  "line": 12,
+                  "col": 16,
+                  "lit": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "fileTable": [
+    ".github/workflows/deploy.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "026eedef-8099-46f4-b60c-e00b16f33ca5",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 15,
+        "lit": "build image ใหม่จากโค้ดล่าสุด"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 14,
+              "lit": "docker build -t git-practice-web:latest ."
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "7f03a8da-4d43-442b-bc5c-1fc867b1f602",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 19,
+        "col": 15,
+        "lit": "หยุด+ลบ container เก่า (ถ้ามี)"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 14,
+              "lit": "docker rm -f git-practice-web"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "continueOnError": {
+        "type": 5,
+        "file": 1,
+        "line": 20,
+        "col": 28,
+        "bool": true
+      },
+      "id": "d217647f-0653-41f3-bb76-294c20daa985",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 23,
+        "col": 15,
+        "lit": "run container ใหม่ (เบื้องหลัง)"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 14,
+              "lit": "docker run -d --name git-practice-web -p 3000:3000 git-practice-web:latest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "37b45d91-dbc6-4810-a1e1-7cc5ea7b5ac2",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 26,
+        "col": 15,
+        "lit": "เสร็จ"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 14,
+              "lit": "echo deploy done - open http://localhost:3000"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "715ffc52-f767-4778-87a5-213e238ad480",
+      "name": "__run_4"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions.runner.requirenode24": {
+      "value": "true"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "true"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_cache_mode": {
+      "value": "write"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_allow_artifacts_file": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "true"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": "September 23rd, 2026"
+    },
+    "actions_runner_node24_default_date": {
+      "value": "June 16th, 2026"
+    },
+    "actions_self_repository": {
+      "value": "true"
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "e2f231e0-1cbb-8beb-9eeb-3d1f42908eab.deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "deploy"
+    },
+    "system.runner.brokerwebsocketprobeurl": {
+      "value": "wss://broker.actions.githubusercontent.com/_ws/ping.sock"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "e2f231e0-1cbb-8beb-9eeb-3d1f42908eab",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "e2f231e0-1cbb-8beb-9eeb-3d1f42908eab",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "12599917-0da9-5180-ad5e-376bf0249c25",
+  "jobDisplayName": "deploy",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/RmsxrW5C2dPbg9uJQNE92UBC5JhLNDYhxIy7eHZJXOx2UBOlQC/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus9.actions.githubusercontent.com/RmsxrW5C2dPbg9uJQNE92UBC5JhLNDYhxIy7eHZJXOx2UBOlQC/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]",
+          "ConnectivityAndDNSChecks": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/65/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/release"
+        },
+        {
+          "k": "sha",
+          "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+        },
+        {
+          "k": "repository",
+          "v": "KanghunS/git-practice-web"
+        },
+        {
+          "k": "repository_owner",
+          "v": "KanghunS"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "348624641"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/KanghunS/git-practice-web.git"
+        },
+        {
+          "k": "run_id",
+          "v": "40853939482"
+        },
+        {
+          "k": "run_number",
+          "v": "7"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "348624641"
+        },
+        {
+          "k": "actor",
+          "v": "KanghunS"
+        },
+        {
+          "k": "workflow",
+          "v": "Deploy (local)"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "release"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "c9801192065bb39a88daebfea86f98e067b0d45a"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kanghunproject@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "kzVerif"
+                              },
+                              {
+                                "k": "username",
+                                "v": "kzVerif"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kanghunproject@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "kzVerif"
+                              },
+                              {
+                                "k": "username",
+                                "v": "kzVerif"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": false
+                        },
+                        {
+                          "k": "id",
+                          "v": "3fd1f640e5d6a465adb24cb5f3f60f62211e2ef3"
+                        },
+                        {
+                          "k": "message",
+                          "v": "feat: edit app.js"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-10-29T16:58:01+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "03e566478f27033de1f9363840085073cd48474b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/KanghunS/git-practice-web/commit/3fd1f640e5d6a465adb24cb5f3f60f62211e2ef3"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kanghun.s@codefin.io"
+                              },
+                              {
+                                "k": "name",
+                                "v": "KanghunS"
+                              },
+                              {
+                                "k": "username",
+                                "v": "KanghunS"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": false
+                        },
+                        {
+                          "k": "id",
+                          "v": "6ee583f00f148c4e6458c1c749ea93bd17212280"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Merge pull request #12 from KanghunS/test\n\nfeat: edit app.js"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-10-29T16:58:34+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "03e566478f27033de1f9363840085073cd48474b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/KanghunS/git-practice-web/commit/6ee583f00f148c4e6458c1c749ea93bd17212280"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kanghun.s@codefin.io"
+                              },
+                              {
+                                "k": "name",
+                                "v": "KanghunS"
+                              },
+                              {
+                                "k": "username",
+                                "v": "KanghunS"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Merge pull request #13 from KanghunS/develop\n\nDevelop"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-10-29T16:59:24+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "03e566478f27033de1f9363840085073cd48474b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/KanghunS/git-practice-web/commit/3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/KanghunS/git-practice-web/compare/c9801192065b...3fe8e9d3f2a0"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "kanghun.s@codefin.io"
+                          },
+                          {
+                            "k": "name",
+                            "v": "KanghunS"
+                          },
+                          {
+                            "k": "username",
+                            "v": "KanghunS"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Merge pull request #13 from KanghunS/develop\n\nDevelop"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-10-29T16:59:24+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "03e566478f27033de1f9363840085073cd48474b"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/KanghunS/git-practice-web/commit/3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "kanghun.s@codefin.io"
+                    },
+                    {
+                      "k": "name",
+                      "v": "KanghunS"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/release"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/KanghunS/git-practice-web.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1793265255.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "KanghunS/git-practice-web"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/KanghunS/git-practice-web.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/KanghunS/git-practice-web"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1438188992.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "git-practice-web"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOVbkFwA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/348624641?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "kanghun.s@codefin.io"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/KanghunS/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/KanghunS/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/KanghunS/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/KanghunS/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/KanghunS"
+                          },
+                          {
+                            "k": "id",
+                            "v": 348624641.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "KanghunS"
+                          },
+                          {
+                            "k": "name",
+                            "v": "KanghunS"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOFMeXAQ"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/KanghunS/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/KanghunS/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/KanghunS/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/KanghunS/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/KanghunS/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/KanghunS"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1793267964.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:KanghunS/git-practice-web.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/KanghunS/git-practice-web"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-10-29T09:37:24Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/KanghunS/git-practice-web"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/348624641?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/KanghunS/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/KanghunS/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/KanghunS/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/KanghunS/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/KanghunS"
+                    },
+                    {
+                      "k": "id",
+                      "v": 348624641.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "KanghunS"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOFMeXAQ"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/KanghunS/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/KanghunS/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/KanghunS/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/KanghunS/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/KanghunS/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/KanghunS"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "KanghunS/git-practice-web/.github/workflows/deploy.yml@refs/heads/release"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+        },
+        {
+          "k": "repository_id",
+          "v": "1438188992"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "KanghunS"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 123380077325.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "KanghunS/git-practice-web/.github/workflows/deploy.yml@refs/heads/release"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "3fe8e9d3f2a0b33f1e93ffbaba2c355dcf018d5b"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "KanghunS/git-practice-web"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/deploy.yml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOFMeXAQ"
+}
+[2026-10-29 09:59:34Z INFO JobRunner] Job ID 12599917-0da9-5180-ad5e-376bf0249c25
+[2026-10-29 09:59:34Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\kanghunz\Downloads\git-practice-web\bin\Runner.Worker.dll
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] binPath: C:\Users\kanghunz\Downloads\git-practice-web\bin
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] RootFolder: C:\Users\kanghunz\Downloads\git-practice-web
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'Runner': 'C:\Users\kanghunz\Downloads\git-practice-web\.runner'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] ConfigFilePath: C:\Users\kanghunz\Downloads\git-practice-web\.runner
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\kanghunz\Downloads\git-practice-web\.runner_migrated'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\kanghunz\Downloads\git-practice-web\.runner_migrated
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\kanghunz\Downloads\git-practice-web\.credentials'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] CredFilePath: C:\Users\kanghunz\Downloads\git-practice-web\.credentials
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\kanghunz\Downloads\git-practice-web\.credentials_migrated'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\kanghunz\Downloads\git-practice-web\.credentials_migrated
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:34Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:34Z INFO HostContext] Well known config file 'Service': 'C:\Users\kanghunz\Downloads\git-practice-web\.service'
+[2026-10-29 09:59:34Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\kanghunz\Downloads\git-practice-web\.service
+[2026-10-29 09:59:34Z INFO ConfigurationStore] Read setting file: 403 chars
+[2026-10-29 09:59:34Z INFO JobRunner] Initializing launch client
+[2026-10-29 09:59:34Z INFO JobServerQueue] Initializing results client
+[2026-10-29 09:59:34Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-10-29 09:59:35Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-10-29 09:59:35Z INFO JobServerQueue] Start process web console line queue.
+[2026-10-29 09:59:35Z INFO JobServerQueue] Start process file upload queue.
+[2026-10-29 09:59:35Z INFO JobServerQueue] Start results file upload queue.
+[2026-10-29 09:59:35Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-10-29 09:59:35Z INFO JobServerQueue] Start process timeline update queue.
+[2026-10-29 09:59:35Z INFO ExecutionContext] Initializing Job context
+[2026-10-29 09:59:35Z INFO ExecutionContext] Initialize GitHub context
+[2026-10-29 09:59:35Z INFO ExecutionContext] Initialize Env context
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:35Z INFO JobRunner] Starting the job execution context.
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO JobRunner] Validating directory permissions for: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Tools': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_tool'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:35Z INFO JobRunner] Getting job extension.
+[2026-10-29 09:59:35Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\kanghunz\Downloads\git-practice-web\.credentials'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\kanghunz\Downloads\git-practice-web\.setup_info'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\kanghunz\Downloads\git-practice-web\_work\_PipelineMapping\KanghunS/git-practice-web\PipelineFolder.json
+[2026-10-29 09:59:35Z INFO PipelineDirectoryManager] Updating job run properties.
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO JobExtension] Downloading actions
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:35Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:35Z INFO Worker] Listening for cancel message from the channel.
+[2026-10-29 09:59:35Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-10-29 09:59:36Z INFO ResultServer] Successfully started websocket client.
+[2026-10-29 09:59:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '432eb799-8eb8-4784-9f3f-76b3a787c1f8', success rate: 1/1.
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:36Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:36Z INFO ActionManager] Save archive 'https://codeload.github.com/actions/checkout/zip/11d5960a326750d5838078e36cf38b85af677262' into C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\_temp_1d7b66ce-1e79-4e08-84db-843441bc8f9c\031dd1b0-5384-45fc-99f9-bbb9240122b0.zip.
+[2026-10-29 09:59:36Z INFO ActionManager] Using Basic token for action archive download.
+[2026-10-29 09:59:36Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-10-29 09:59:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '432eb799-8eb8-4784-9f3f-76b3a787c1f8', success rate: 1/1.
+[2026-10-29 09:59:37Z INFO ActionManager] Request URL: https://codeload.github.com/actions/checkout/zip/11d5960a326750d5838078e36cf38b85af677262 X-GitHub-Request-Id: FA70:2DFED4:1BC394:2F64CB:6AE31907 Http Status: OK
+[2026-10-29 09:59:38Z INFO ActionManager] Finished getting action repository.
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-10-29 09:59:38Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-10-29 09:59:38Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManager] Load action that reference repository from 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\actions\checkout\v4'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-10-29 09:59:38Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-10-29 09:59:38Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-10-29 09:59:38Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-10-29 09:59:38Z INFO JobExtension] Adding .
+[2026-10-29 09:59:38Z INFO JobExtension] Adding .
+[2026-10-29 09:59:38Z INFO JobExtension] Adding .
+[2026-10-29 09:59:38Z INFO JobExtension] Adding .
+[2026-10-29 09:59:38Z INFO JobExtension] Adding .
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO JobExtension] Total accessible running process: 371.
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO JobExtension] Start checking server connectivity.
+[2026-10-29 09:59:38Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-10-29 09:59:38Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-10-29 09:59:38Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-10-29 09:59:38Z INFO JobExtension] Start checking service connectivity in background.
+[2026-10-29 09:59:38Z INFO JobExtension] Start checking runner websocket connectivity in background.
+[2026-10-29 09:59:38Z INFO BrokerServer] Attempting to start runner websocket client.
+[2026-10-29 09:59:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "432eb799-8eb8-4784-9f3f-76b3a787c1f8",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2026-10-29T09:59:35.0659734Z",
+  "finishTime": "2026-10-29T09:59:38.143346Z"
+}.
+[2026-10-29 09:59:38Z INFO JobRunner] Total job steps: 5.
+[2026-10-29 09:59:38Z INFO JobRunner] Run all job steps.
+[2026-10-29 09:59:38Z INFO DapDebugger] DapDebugger initialized
+[2026-10-29 09:59:38Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v4'
+[2026-10-29 09:59:38Z INFO StepsRunner] Evaluating: success()
+[2026-10-29 09:59:38Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:38Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:38Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] Process started with process id 26196, waiting for process exit.
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] Finished process 26196 with exit code 0, and elapsed time 00:00:00.0159582.
+[2026-10-29 09:59:38Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManager] Load action that reference repository from 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\actions\checkout\v4'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-10-29 09:59:38Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-10-29 09:59:38Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-10-29 09:59:38Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-10-29 09:59:38Z INFO ExecutionContext] Reserve record order 7 to 12 for post job actions.
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:38Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateArtifactsFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ArtifactsListFileCommand, Runner.Worker
+[2026-10-29 09:59:38Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_319868d5-7112-44f3-a96f-145dc790e702'
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "KanghunS/git-practice-web"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-10-29 09:59:38Z INFO ActionManifestManagerLegacy] Input 'allow-unsafe-pr-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 109,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:38Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:38Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:38Z INFO HostContext] Well known directory 'Externals': 'C:\Users\kanghunz\Downloads\git-practice-web\externals'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\kanghunz\Downloads\git-practice-web\externals\node24\bin\node.exe'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '432eb799-8eb8-4784-9f3f-76b3a787c1f8', success rate: 1/1.
+[2026-10-29 09:59:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:38Z INFO ProcessInvokerWrapper] Process started with process id 21716, waiting for process exit.
+[2026-10-29 09:59:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:38Z INFO AddMaskCommandExtension] Add new secret mask with length of 524
+[2026-10-29 09:59:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:39Z ERR  GitHubActionsService] GET request to wss://broker.actions.githubusercontent.com/_ws/ping.sock failed. HTTP Status: SwitchingProtocols
+[2026-10-29 09:59:39Z INFO BrokerServer] Successfully started runner websocket client.
+[2026-10-29 09:59:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_432eb799-8eb8-4784-9f3f-76b3a787c1f8.1
+[2026-10-29 09:59:39Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-10-29 09:59:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:40Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-10-29 09:59:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Finished process 21716 with exit code 0, and elapsed time 00:00:06.1880212.
+[2026-10-29 09:59:44Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_319868d5-7112-44f3-a96f-145dc790e702) is empty; skipping attachment upload
+[2026-10-29 09:59:44Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_319868d5-7112-44f3-a96f-145dc790e702'
+[2026-10-29 09:59:44Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:44Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:44Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node24",
+  "stage": "Main",
+  "stepId": "026eedef-8099-46f4-b60c-e00b16f33ca5",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 7,
+  "startTime": "2026-10-29T09:59:38.1583978Z",
+  "finishTime": "2026-10-29T09:59:44.4499139Z"
+}.
+[2026-10-29 09:59:44Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:44Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:44Z INFO StepsRunner] Processing step: DisplayName='build image ใหม่จากโค้ดล่าสุด'
+[2026-10-29 09:59:44Z INFO StepsRunner] Evaluating: success()
+[2026-10-29 09:59:44Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:44Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:44Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:44Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Process started with process id 10372, waiting for process exit.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Finished process 10372 with exit code 0, and elapsed time 00:00:00.0145688.
+[2026-10-29 09:59:44Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:44Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:44Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:44Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_299cb1f6-2c98-4dd8-b1d6-e9b899282cfc'
+[2026-10-29 09:59:44Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:44Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:44Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:44Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:44Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:44Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:44Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\21197930-6605-47f4-b020-14f9dcce6715.cmd""'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:44Z INFO ProcessInvokerWrapper] Process started with process id 16724, waiting for process exit.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '026eedef-8099-46f4-b60c-e00b16f33ca5', success rate: 1/1.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7f03a8da-4d43-442b-bc5c-1fc867b1f602', success rate: 1/1.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:44Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_026eedef-8099-46f4-b60c-e00b16f33ca5.1
+[2026-10-29 09:59:45Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-10-29 09:59:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7f03a8da-4d43-442b-bc5c-1fc867b1f602', success rate: 1/1.
+[2026-10-29 09:59:45Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-10-29 09:59:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7f03a8da-4d43-442b-bc5c-1fc867b1f602', success rate: 1/1.
+[2026-10-29 09:59:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7f03a8da-4d43-442b-bc5c-1fc867b1f602', success rate: 1/1.
+[2026-10-29 09:59:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7f03a8da-4d43-442b-bc5c-1fc867b1f602', success rate: 1/1.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Finished process 16724 with exit code 0, and elapsed time 00:00:03.0164944.
+[2026-10-29 09:59:47Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_299cb1f6-2c98-4dd8-b1d6-e9b899282cfc) is empty; skipping attachment upload
+[2026-10-29 09:59:47Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_299cb1f6-2c98-4dd8-b1d6-e9b899282cfc'
+[2026-10-29 09:59:47Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:47Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:47Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "7f03a8da-4d43-442b-bc5c-1fc867b1f602",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2026-10-29T09:59:44.453685Z",
+  "finishTime": "2026-10-29T09:59:47.5090413Z"
+}.
+[2026-10-29 09:59:47Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:47Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:47Z INFO StepsRunner] Processing step: DisplayName='หยุด+ลบ container เก่า (ถ้ามี)'
+[2026-10-29 09:59:47Z INFO StepsRunner] Evaluating: success()
+[2026-10-29 09:59:47Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:47Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:47Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:47Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Process started with process id 20684, waiting for process exit.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Finished process 20684 with exit code 0, and elapsed time 00:00:00.0099779.
+[2026-10-29 09:59:47Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:47Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:47Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_d61a1084-6687-4de5-9581-f06b23ded68a'
+[2026-10-29 09:59:47Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:47Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:47Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:47Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:47Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:47Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:47Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\31805790-387e-42c0-ad29-3470032f0d61.cmd""'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:47Z INFO ProcessInvokerWrapper] Process started with process id 4956, waiting for process exit.
+[2026-10-29 09:59:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd217647f-0653-41f3-bb76-294c20daa985', success rate: 1/1.
+[2026-10-29 09:59:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_7f03a8da-4d43-442b-bc5c-1fc867b1f602.1
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 4956 with exit code 0, and elapsed time 00:00:00.6016735.
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-10-29 09:59:48Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_d61a1084-6687-4de5-9581-f06b23ded68a) is empty; skipping attachment upload
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_d61a1084-6687-4de5-9581-f06b23ded68a'
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:48Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "d217647f-0653-41f3-bb76-294c20daa985",
+  "stepContextName": "__run_2",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-29T09:59:47.5100217Z",
+  "finishTime": "2026-10-29T09:59:48.1389001Z"
+}.
+[2026-10-29 09:59:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:48Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:48Z INFO StepsRunner] Processing step: DisplayName='run container ใหม่ (เบื้องหลัง)'
+[2026-10-29 09:59:48Z INFO StepsRunner] Evaluating: success()
+[2026-10-29 09:59:48Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:48Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:48Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 4496, waiting for process exit.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 4496 with exit code 0, and elapsed time 00:00:00.0343154.
+[2026-10-29 09:59:48Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd217647f-0653-41f3-bb76-294c20daa985', success rate: 1/1.
+[2026-10-29 09:59:48Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_8dadc613-1271-43eb-abb1-bc02782ad368'
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:48Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\1e851c0d-5076-4ee7-bcf9-056d0ac50358.cmd""'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 31064, waiting for process exit.
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '37b45d91-dbc6-4810-a1e1-7cc5ea7b5ac2', success rate: 1/1.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 31064 with exit code 0, and elapsed time 00:00:00.4816836.
+[2026-10-29 09:59:48Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_8dadc613-1271-43eb-abb1-bc02782ad368) is empty; skipping attachment upload
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_8dadc613-1271-43eb-abb1-bc02782ad368'
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:48Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "37b45d91-dbc6-4810-a1e1-7cc5ea7b5ac2",
+  "stepContextName": "__run_3",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-29T09:59:48.1402425Z",
+  "finishTime": "2026-10-29T09:59:48.6868729Z"
+}.
+[2026-10-29 09:59:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:48Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:48Z INFO StepsRunner] Processing step: DisplayName='เสร็จ'
+[2026-10-29 09:59:48Z INFO StepsRunner] Evaluating: success()
+[2026-10-29 09:59:48Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:48Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:48Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 29512, waiting for process exit.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 29512 with exit code 0, and elapsed time 00:00:00.0119661.
+[2026-10-29 09:59:48Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:48Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_e22de445-4dfe-42dc-a5b5-a715b41cdb32'
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:48Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Which2: 'cmd'
+[2026-10-29 09:59:48Z INFO ScriptHandler] Location: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\cmd.EXE'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '/D /E:ON /V:OFF /S /C "CALL "C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\707f8524-feda-4803-83f2-3f31e460c0f7.cmd""'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '715ffc52-f767-4778-87a5-213e238ad480', success rate: 1/1.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 10932, waiting for process exit.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 10932 with exit code 0, and elapsed time 00:00:00.0300302.
+[2026-10-29 09:59:48Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_e22de445-4dfe-42dc-a5b5-a715b41cdb32) is empty; skipping attachment upload
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_e22de445-4dfe-42dc-a5b5-a715b41cdb32'
+[2026-10-29 09:59:48Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:48Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:48Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "cmd",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "715ffc52-f767-4778-87a5-213e238ad480",
+  "stepContextName": "__run_4",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-29T09:59:48.6879032Z",
+  "finishTime": "2026-10-29T09:59:48.7422013Z"
+}.
+[2026-10-29 09:59:48Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:48Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:48Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v4'
+[2026-10-29 09:59:48Z INFO StepsRunner] Evaluating: always()
+[2026-10-29 09:59:48Z INFO StepsRunner] Result: true
+[2026-10-29 09:59:48Z INFO StepsRunner] Starting the step.
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-29 09:59:48Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 15184, waiting for process exit.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Finished process 15184 with exit code 0, and elapsed time 00:00:00.0152868.
+[2026-10-29 09:59:48Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:48Z INFO ActionManager] Load action that reference repository from 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\actions\checkout\v4'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Actions': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions'
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 101,
+          "col": 3,
+          "lit": "allow-unsafe-pr-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 109,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2026-10-29 09:59:48Z INFO ActionManager] Action pre node.js file: N/A.
+[2026-10-29 09:59:48Z INFO ActionManager] Action node.js file: dist/index.js.
+[2026-10-29 09:59:48Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExecutionContext] Write event payload to C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_github_workflow\event.json
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Work': 'C:\Users\kanghunz\Downloads\git-practice-web\_work'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Temp': 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp'
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-29 09:59:48Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_list_d84c72d4-bdfa-4f7c-ab4e-78224ee6f770'
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "KanghunS/git-practice-web"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'ref': default value evaluate result: ""
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'ssh-key': default value evaluate result: ""
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'ssh-known-hosts': default value evaluate result: ""
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'ssh-user': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 51,
+  "col": 14,
+  "lit": "git"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 54,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'path': default value evaluate result: ""
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 59,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": ""
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": ""
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 76,
+  "col": 14,
+  "lit": "1"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 79,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 94,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 97,
+  "col": 14,
+  "lit": "true"
+}
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'github-server-url': default value evaluate result: ""
+[2026-10-29 09:59:48Z INFO ActionManifestManagerLegacy] Input 'allow-unsafe-pr-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 109,
+  "col": 14,
+  "lit": "false"
+}
+[2026-10-29 09:59:48Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-29 09:59:48Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:48Z INFO HostContext] Well known directory 'Externals': 'C:\Users\kanghunz\Downloads\git-practice-web\externals'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\kanghunz\Downloads\git-practice-web\externals\node24\bin\node.exe'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\kanghunz\Downloads\git-practice-web\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\kanghunz\Downloads\git-practice-web\_work\git-practice-web\git-practice-web'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-29 09:59:48Z INFO ProcessInvokerWrapper] Process started with process id 25580, waiting for process exit.
+[2026-10-29 09:59:48Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '715ffc52-f767-4778-87a5-213e238ad480', success rate: 1/1.
+[2026-10-29 09:59:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3fdc1c34-12fe-4cde-aa5e-95c78975ab8f', success rate: 1/1.
+[2026-10-29 09:59:49Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2026-10-29 09:59:49Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-10-29 09:59:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3fdc1c34-12fe-4cde-aa5e-95c78975ab8f', success rate: 1/1.
+[2026-10-29 09:59:49Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:49Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_d217647f-0653-41f3-bb76-294c20daa985.1
+[2026-10-29 09:59:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3fdc1c34-12fe-4cde-aa5e-95c78975ab8f', success rate: 1/1.
+[2026-10-29 09:59:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3fdc1c34-12fe-4cde-aa5e-95c78975ab8f', success rate: 1/1.
+[2026-10-29 09:59:50Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:50Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_37b45d91-dbc6-4810-a1e1-7cc5ea7b5ac2.1
+[2026-10-29 09:59:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3fdc1c34-12fe-4cde-aa5e-95c78975ab8f', success rate: 1/1.
+[2026-10-29 09:59:51Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:51Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_715ffc52-f767-4778-87a5-213e238ad480.1
+[2026-10-29 09:59:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-29 09:59:51Z INFO ProcessInvokerWrapper] Finished process 25580 with exit code 0, and elapsed time 00:00:03.0761103.
+[2026-10-29 09:59:51Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\step_summary_d84c72d4-bdfa-4f7c-ab4e-78224ee6f770) is empty; skipping attachment upload
+[2026-10-29 09:59:51Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp\_runner_file_commands\artifacts_d84c72d4-bdfa-4f7c-ab4e-78224ee6f770'
+[2026-10-29 09:59:51Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-29 09:59:51Z INFO StepsRunner] Step result: 
+[2026-10-29 09:59:51Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node24",
+  "stage": "Post",
+  "stepId": "3fdc1c34-12fe-4cde-aa5e-95c78975ab8f",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2026-10-29T09:59:48.7452365Z",
+  "finishTime": "2026-10-29T09:59:51.8565214Z"
+}.
+[2026-10-29 09:59:51Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2026-10-29 09:59:51Z INFO StepsRunner] Current state: job state = ''
+[2026-10-29 09:59:51Z INFO JobRunner] Finalize job.
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:51Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:51Z INFO JobExtension] Initialize Env context
+[2026-10-29 09:59:51Z INFO JobExtension] Initialize steps context
+[2026-10-29 09:59:51Z INFO JobExtension] Total accessible running process: 371.
+[2026-10-29 09:59:51Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-10-29 09:59:51Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://broker.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-10-29T09:59:38.1317058Z",
+  "statusCode": "http_OK",
+  "requestId": "FA73:205798:350D868:36107CF:6AE31908",
+  "httpRequestDurationInMs": 898,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-29 09:59:51Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://token.actions.githubusercontent.com/ready",
+  "endpointIPs": null,
+  "startTime": "2026-10-29T09:59:38.1327198Z",
+  "statusCode": "http_NoContent",
+  "requestId": "FA72:82CA4:87215D:9A16E7:6AE31908",
+  "httpRequestDurationInMs": 962,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-29 09:59:51Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://run.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-10-29T09:59:38.1329736Z",
+  "statusCode": "http_OK",
+  "requestId": "FA71:6C42C:36AFF63:37B2F9F:6AE31908",
+  "httpRequestDurationInMs": 899,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-29 09:59:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c80ebf93-7741-464a-8726-f388f0f2ce25', success rate: 1/1.
+[2026-10-29 09:59:51Z INFO JobExtension] Runner websocket probe result: {"connected":true,"connectCount":1,"lastCloseReason":"job_completed","totalDurationMs":13739,"errors":[]}
+[2026-10-29 09:59:51Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "c80ebf93-7741-464a-8726-f388f0f2ce25",
+  "result": "succeeded",
+  "errorMessages": [
+    "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-29T09:59:51.8632255Z",
+  "finishTime": "2026-10-29T09:59:51.8813499Z"
+}.
+[2026-10-29 09:59:51Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2026-10-29 09:59:51Z INFO JobRunner] Completing the job execution context.
+[2026-10-29 09:59:51Z INFO JobRunner] Shutting down the job server queue.
+[2026-10-29 09:59:51Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-10-29 09:59:52Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-10-29 09:59:53Z INFO JobServerQueue] All queue process task stopped.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c80ebf93-7741-464a-8726-f388f0f2ce25', success rate: 1/1.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Web console line queue drained.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-10-29 09:59:53Z INFO JobServerQueue] File upload queue drained.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-10-29 09:59:53Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:53Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_3fdc1c34-12fe-4cde-aa5e-95c78975ab8f.1
+[2026-10-29 09:59:54Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-29 09:59:54Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_c80ebf93-7741-464a-8726-f388f0f2ce25.1
+[2026-10-29 09:59:55Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-10-29 09:59:55Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\kanghunz\Downloads\git-practice-web\_diag\blocks\e2f231e0-1cbb-8beb-9eeb-3d1f42908eab_12599917-0da9-5180-ad5e-376bf0249c25.1
+[2026-10-29 09:59:56Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-10-29 09:59:56Z INFO JobServerQueue] Results upload queue drained.
+[2026-10-29 09:59:56Z INFO JobServerQueue] Timeline update queue drained.
+[2026-10-29 09:59:56Z INFO JobServerQueue] Disposing job server ...
+[2026-10-29 09:59:56Z INFO JobServerQueue] Disposing results server ...
+[2026-10-29 09:59:56Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-10-29 09:59:56Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\kanghunz\Downloads\git-practice-web\_work\_temp
+[2026-10-29 09:59:56Z INFO HostContext] Well known directory 'Bin': 'C:\Users\kanghunz\Downloads\git-practice-web\bin'
+[2026-10-29 09:59:56Z INFO HostContext] Well known directory 'Root': 'C:\Users\kanghunz\Downloads\git-practice-web'
+[2026-10-29 09:59:56Z INFO HostContext] Well known directory 'Diag': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag'
+[2026-10-29 09:59:56Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\kanghunz\Downloads\git-practice-web\_diag\.telemetry'
+[2026-10-29 09:59:56Z INFO JobRunner] Raising job completed against run service
+[2026-10-29 09:59:57Z INFO Worker] Job completed.
