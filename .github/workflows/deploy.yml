@@ -7,9 +7,6 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted          # <-- เปลี่ยนจาก ubuntu-latest เป็นเครื่องเรา
-    defaults:
-      run:
-        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -17,7 +14,8 @@ jobs:
         run: docker build -t git-practice-web:latest .
 
       - name: หยุด+ลบ container เก่า (ถ้ามี)
-        run: docker rm -f git-practice-web || true
+        continue-on-error: true
+        run: docker rm -f git-practice-web
 
       - name: run container ใหม่ (เบื้องหลัง)
         run: docker run -d --name git-practice-web -p 3000:3000 git-practice-web:latest
