@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted          # <-- เปลี่ยนจาก ubuntu-latest เป็นเครื่องเรา
+    defaults:
+      run:
+        shell: cmd
     steps:
       - uses: actions/checkout@v4
 
@@ -21,4 +24,4 @@ jobs:
         run: docker run -d --name git-practice-web -p 3000:3000 git-practice-web:latest
 
       - name: เสร็จ
-        run: echo "🚀 deploy สำเร็จ เปิด http://localhost:3000 ได้เลย"
+        run: echo deploy done - open http://localhost:3000
